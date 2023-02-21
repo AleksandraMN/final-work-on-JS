@@ -1,4 +1,4 @@
-/*
+/* 11 урок:
 Дан макет сайта https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=190%3A1194&t=q4NMnXTnwyyTSGA6-0
 
 В блоке Featured Items небходимо реализовать шаблон товаров.
@@ -120,6 +120,8 @@ pElem.classList.add('items-link__cost');
 pElem.textContent = element.price;
 itemsFigcaptionBlock.append(pElem);
 
+//=========== 12 урок: ==============================
+
       //уменьшение количества товара
       const minusFunction = id => {
          cart[id]['count']--;
@@ -233,7 +235,7 @@ const sumFunction = id => {
          imgXEl.addEventListener('click', function (e) {
             blockEl.remove();
             countCart = countCart - 1;
-           cartSpanEl.textContent = countCart;
+            cartSpanEl.textContent = countCart;
          });
          };
       };
