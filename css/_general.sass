@@ -1,0 +1,636 @@
+.center
+   padding-left: calc(50% - 570px)
+   padding-right: calc(50% - 570px)
+   width: 100vw
+
+/*header*/  
+.header
+   min-height: 75px
+
+.header_bc
+   background: #222222
+
+.header__inner
+   display: flex
+   justify-content: space-between
+   align-items: center
+
+a, img
+   display: block
+   text-decoration: none
+
+#burger
+   display: none
+
+[for=burger]
+   display: block
+   width: 32px
+   height: 23px
+   cursor: pointer
+
+.hamburger-menu
+   display: flex
+   align-items: center
+   border: none
+   padding: 30px 20.5px 22px 20.5px
+
+#burger:checked + label + .menu 
+   display: block
+   position: absolute
+   width: 232px
+   height: 634px
+   right: 5%
+   top: 81px
+   background: #FFFFFF
+   animation: show .3s ease
+
+@keyframes show
+   0%
+      opacity: 0
+   100%
+      opacity: 1
+.menu
+   display: none
+   text-decoration: none
+   user-select: none
+
+.nav
+   display: flex
+   justify-content: center
+
+.header__left
+   display: flex
+   justify-content: flex-start
+
+.header-logo__link
+   padding: 18px 20px 19px 20px
+
+.header-loupe__link
+   padding: 28px 20px 20px 20px
+
+.nav__link_cabinet
+   padding: 26px 12.5px 26px 12.5px
+
+.nav__link_cart
+   padding: 26px 29px 20px 29.5px
+   position: relative
+
+.nav__link_cart-span
+   display: inline-block
+   width: 19px
+   height: 19px
+   color: white
+   background: #f16d7f
+   border-radius: 50%
+   position: absolute
+   text-align: center
+   right: 22px
+   top: 19px
+   font-size: 12px
+   line-height: 19px
+
+
+.nav__link 
+   text-decoration: none
+   
+.menu ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+
+li > a
+   font-style: normal
+   font-weight: 400
+   font-size: 14px
+   line-height: 24px
+   color: #6F6E6E
+   text-decoration: none
+   padding-left: 53.5px
+
+.menu__main-heading
+   padding-left: 33px
+   margin-top: 32px
+   font-style: normal
+   font-weight: 700
+   font-size: 14px
+   line-height: 17px
+   color: #000000
+
+.menu__heading
+   padding-left: 32px
+   font-style: normal
+   font-weight: 400
+   font-size: 14px
+   line-height: 17px
+   color: #F16D7F
+
+//section brand 
+.brand
+   display: flex
+   flex-wrap: wrap
+   padding-left: calc(50% - 800px)
+   padding-right: calc(50% - 800px)
+
+.brand_bc
+   background: #F1E4E6
+
+.brand__pic, .brand__dsc
+   width: 50%
+   height: 764px
+
+.brand__img
+   max-width: 800px
+   max-height: 764px
+
+.brand__dsc
+   padding-left: 64px
+   padding-top: 290px
+
+.brand__heading
+   border-left: 12px  solid #F16D7F
+   max-width: 406px
+
+.brand__header
+   font-style: normal
+   font-weight: 900
+   font-size: 48px
+   color: #222222
+   padding-left: 16px
+   margin: 0
+
+.brand__header_size
+   font-weight: 700
+   font-size: 32px
+   color: #222222
+
+.brand__header_c
+   color: #F16D7F
+
+//content
+.content
+   margin-top: 65px
+   display: flex
+   flex-direction: column
+   
+.content__first
+   display: flex
+   gap: 2.6%
+
+.content__second
+   display: flex
+   padding-top: 30px
+
+.content__link 
+   display: block
+   width: 31.6%
+
+.content__link:hover, .content__link_second:hover
+   transform: scale(1.1)
+   transition-duration: .5s
+
+.content__link_second
+   display: block
+   width: 100%
+
+.content_women
+   background:  url("../img/Group36.jpg") center/cover no-repeat 
+   
+.content_men
+   background: no-repeat center/cover url("../img/Group37.jpg")
+   background-size: cover
+
+.content_kids
+   background: no-repeat center/cover url("../img/Group38.jpg")
+  
+.content_accesories
+   background: no-repeat center/cover url("../img/Group39.jpg")
+   
+.content__text
+   font-style: normal
+   font-weight: 400
+   font-size: 16px
+   line-height: 19px
+   text-align: center
+   color: #FFFFFF
+
+.content__text_c
+   font-weight: 700
+   font-size: 24px
+   line-height: 29px
+   text-align: center
+   color: #F16D7F
+
+.content__text_m1
+   margin-top: 105px
+   margin-bottom: 105px     
+
+.content__text_m2
+   margin-top: 65px
+   margin-bottom: 65px
+
+//items
+.items
+   padding-top: 96px
+
+.items__header
+   font-style: normal
+   font-weight: 400
+   font-size: 30px
+   color: #222222
+   text-align: center
+   margin: 0 0
+
+.items__info
+   font-style: normal
+   font-weight: 400
+   font-size: 14px
+   color: #9F9F9F
+   text-align: center
+   margin-top: 6px
+   margin-bottom: 18px
+
+.items__link 
+   display: block
+   width: 360px
+   height: 592px
+   display: flex
+   margin-top: 30px
+
+.items-link__header
+   font-weight: 400
+   font-size: 13px
+   line-height: 16px
+   color: #000000
+   margin: 25px 0 16px 16px
+
+.items-link__text
+   font-style: normal
+   font-weight: 300
+   font-size: 14px
+   line-height: 17px
+   color: #5D5D5D
+   margin: 16px 16px 0 16px
+   
+.items-link__cost
+   font-style: normal
+   font-weight: 400
+   font-size: 16px
+   line-height: 19px
+   color: #F16D7F
+   padding: 18px 0 19px 16px
+   margin: 0
+
+.items__first
+   display: flex
+   flex-wrap: wrap
+   justify-content: space-between
+
+.items__figcaption
+   background: #F8F8F8
+
+.items__box
+   display: flex
+   flex-direction: column
+   margin-bottom: 48.5px
+
+.items__figure
+   background: #F8F8F8
+   margin: 0 
+   padding: 0
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   
+.items__figcaption
+   display: block
+
+.items__img
+   width: 100%
+   
+.items__pic 
+   position: relative
+   display: flex
+
+.items__pic img
+   position: absolute
+   left: 0
+   top: 0
+
+.items__img_hover
+   width: 100%
+   opacity: 0
+
+.items__img_hover:hover 
+   opacity: 1
+   transition-duration: .5s
+
+.items__link:hover .items__img_hover
+   opacity: 1
+   transition-duration: .5s
+
+.items__dsc
+   display: flex
+
+//button
+.button
+   border: 1px solid #FF6A6A
+   background: #FFFF
+   padding: 0
+
+.button:hover, .button__text:hover
+   background: #F26376
+   color: #fff
+   transition-duration: .5s
+
+.items__button
+   display: flex
+   justify-content: center
+   margin-bottom: 95.5px
+
+.button__text
+   font-weight: 400
+   font-size: 16px
+   line-height: 19px
+   color: #F26376
+   padding: 14.5px 38.5px 13.5px 38.5px
+   margin: 0
+
+//footer
+.footer
+   background: #222224
+   padding-top: 103px
+
+.footer__block
+   display: flex
+   justify-content: space-between
+   padding-bottom: 104px
+   justify-content: center
+   align-content: center
+   justify-content: center
+   gap: 2.6%
+
+.footer__block1, .footer__block2, .footer__block3, .footer__img
+   text-align: center
+   justify-content: center
+
+.footer__block1, .footer__block2, .footer__block3
+   width: 31.6%
+   
+.footer__header
+   font-style: normal
+   font-weight: 400
+   font-size: 19.96px
+   line-height: 24px
+   color: #FBFBFB
+
+.footer__pic
+   display: flex
+   justify-content: center
+
+.footer__header_free
+   margin-top: 28px
+   margin-bottom: 0
+
+.footer__header_sales
+   margin-top: 19px
+   margin-bottom: 0
+
+.footer__header_quality
+   margin-top: 25px
+   margin-bottom: 0
+
+.footer__text
+   margin-top: 16px
+   margin-bottom: 0
+   font-style: normal
+   font-weight: 300
+   font-size: 13.972px
+   line-height: 17px
+   text-align: center
+   color: #FBFBFB
+
+.footer__container
+   background: url("../img/photo subscribe.jpg")  center/cover no-repeat
+   height: 448px
+   display: flex
+   justify-content: space-between
+   flex-wrap: wrap
+
+.container__photo
+   padding-top: 87px
+   justify-content: center
+
+.container__pic
+   display: flex
+   justify-content: center
+   margin-bottom: 30px
+   max-width: 360px
+
+.container__text
+   text-align: center
+   font-style: normal
+   font-weight: 400
+   font-size: 20px
+   line-height: 24px
+   text-align: center
+   color: #222224
+
+.container__dsc
+   padding-top: 150px
+   justify-content: center
+   max-width: 560px
+
+p
+   margin: 0
+
+.container__subscribe
+   text-align: center
+   font-weight: 400
+   font-size: 18px
+   text-align: center
+   color: #222224
+   margin-bottom: 32px
+
+.container__subscribe_fs
+   font-weight: 700
+   font-size: 24px
+   text-align: center
+   color: #222224
+
+form
+   display: flex
+
+.input__first
+   width: 256px
+   height: 49px
+   padding: 7px 64px 6px 22px
+   margin-right: 0
+   border: none
+   font-style: normal
+   font-weight: 400
+   font-size: 14px
+   line-height: 17px
+   display: flex
+   align-items: center
+   color: #222224
+   opacity: 0.67
+   border-radius: 30px 0 0 30px
+   background: #E1E1E1
+
+.input__second
+   width: 100px
+   height: 49px
+   margin-left: 0
+   background: #E05C6E
+   border: none
+   border-radius: 0 30px 30px 0
+   color:  #FFFFFF
+   font-style: normal
+   font-weight: 400
+   font-size: 14px
+   line-height: 17px
+   display: flex
+   align-items: center
+   justify-content: center
+   cursor: pointer
+
+.input__second:hover
+   opacity: 0.9
+
+.container__input
+   display: flex
+
+.footer__info
+   display: flex
+   justify-content: space-between
+   height: 79px
+
+.info__brand
+   font-style: normal
+   font-weight: 400
+   font-size: 16px
+   line-height: 19px
+   color: #FBFBFB
+   padding-top: 30px 
+
+.info__brand_p
+   margin: 0
+
+.footer__nav
+   display: flex
+   margin-top: 24px
+
+.nav__block
+   width: 31.45px
+   height: 32px
+   background: #FFFFFF
+   margin-left: 7.29px
+   display: flex
+   justify-content: center
+   align-items: center
+
+svg:hover, .nav__block:hover
+   fill: #FFFFFF
+   background: #F16D7F
+
+/* ===== content-temp ====== */   
+.section
+   padding-left: calc(50% - 800px)
+   padding-right: calc(50% - 800px)
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
+   margin-bottom: 50px
+
+.content-temp 
+   width: 652px
+   display: flex
+   justify-content: center
+   box-shadow: 10px 20px 15px rgb(206, 206, 206)
+   margin-top: 40px
+
+.content-temp__pic 
+   width: 262px
+   height: 306px
+
+.content-temp__item 
+   width: 390px
+   padding-left: 31px
+   padding-top: 22px
+   padding-bottom: 62px
+
+.content-temp__name 
+   font-weight: 400
+   font-size: 24px
+   line-height: 29px
+   color: #222222
+   padding-bottom: 42px
+
+.content-temp__price 
+   color: #575757
+   font-weight: 400
+   font-size: 22px
+   line-height: 26px
+   padding-bottom: 6px
+
+.input-temp 
+   width: 43px
+   height: 24px
+   text-align: center
+   border: 1px solid #EAEAEA
+
+.content-temp__price_color 
+   font-weight: 400
+   font-size: 22px
+   line-height: 26px
+   color: #ef5b70
+   padding-bottom: 6px
+
+.content-temp__color 
+   color: #575757
+   font-weight: 400
+   font-size: 22px
+   line-height: 26px
+   padding-bottom: 6px
+
+.content-temp__size 
+   color: #575757
+   font-weight: 400
+   font-size: 22px
+   line-height: 26px
+   padding-bottom: 6px
+
+.content-temp__quantity
+   color: #575757
+   font-weight: 400
+   font-size: 22px
+   line-height: 26px
+
+.content-temp__pic_x 
+   width: 18px
+   height: 18px
+   margin-top: 28px
+   margin-right: 22px
+   cursor: pointer
+
+.img-temp 
+   width: 100%
+
+.close-temp 
+   display: none
+
+
+.img_x-temp 
+   width: 100%
+
+.section__head
+   font-style: normal
+   font-weight: 400
+   font-size: 30px
+   line-height: 36px
+   color: #222222
+   text-align: center
+   
+
+
